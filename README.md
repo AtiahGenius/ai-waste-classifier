@@ -68,8 +68,6 @@ ai-waste-classifier/
 │   ├── train.py
 │   ├── preprocess.py
 │   └── utils.py
-│
-└── screenshots/                    # UI images (optional)
 ```
 
 ---
@@ -79,7 +77,7 @@ ai-waste-classifier/
 ### 1️⃣ Clone the repo
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/ai-waste-classifier.git
+git clone https://github.com/bechosen-spec/ai-waste-classifier.git
 cd ai-waste-classifier
 ```
 
