@@ -1,3 +1,5 @@
+
+import os
 import streamlit as st
 import tensorflow as tf
 import numpy as np
@@ -70,13 +72,14 @@ st.markdown('<p class="desc">Upload an image or take a picture, and the AI will 
 # -----------------------------------------------------------
 # LOAD MODEL
 # -----------------------------------------------------------
-MODEL_PATH = "waste_model_efficientnet.keras"
-model = tf.keras.models.load_model(MODEL_PATH, safe_mode=False)
+BASE_DIR = os.getcwd()
+MODEL_PATH = os.path.join(BASE_DIR, "waste_model_efficientnet.keras")
+model = tf.keras.models.load_model(r'C:\Users\prosp\ai-waste-classifier\waste_model_efficientnet.keras')
 
 # -----------------------------------------------------------
 # CLASS NAMES + ADVICE
 # -----------------------------------------------------------
-class_names = ["recyclable", "biodegradable", "non_recyclable"]
+class_names = ["biodegradable", "non_recyclable", "recyclable"]
 
 ADVICE = {
     "recyclable": "♻️ This item is recyclable. Rinse if necessary and place it in the recycling bin.",
@@ -132,7 +135,7 @@ st.markdown('</div>', unsafe_allow_html=True)
 # -----------------------------------------------------------
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Image", use_container_width=True)
+    st.image(image, caption="Uploaded Image")
 
     if st.button("🔍 Classify Image", use_container_width=True):
         img_array = preprocess_image(image)
@@ -165,4 +168,4 @@ if uploaded_file is not None:
 # -----------------------------------------------------------
 # FOOTER
 # -----------------------------------------------------------
-st.markdown('<p class="footer">Developed with ❤️ using Streamlit & TensorFlow</p>', unsafe_allow_html=True)
+st.markdown('<p class="footer">Developed with using Streamlit & TensorFlow By Geniuz Atiah </p>', unsafe_allow_html=True)

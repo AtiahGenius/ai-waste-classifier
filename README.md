@@ -117,7 +117,7 @@ App opens at:
 
 ---
 
-## 📦 Dataset
+## 📦 Datasete
 
 The dataset consists of three folders:
 
@@ -159,7 +159,7 @@ Training was done in Google Colab using:
 
 ## 👨🏾‍💻 Author
 
-**Prosper Attiah**
+**Prosper Atiah**
 
 
 ---
