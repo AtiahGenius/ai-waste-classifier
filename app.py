@@ -74,7 +74,7 @@ st.markdown('<p class="desc">Upload an image or take a picture, and the AI will 
 # -----------------------------------------------------------
 BASE_DIR = os.getcwd()
 MODEL_PATH = os.path.join(BASE_DIR, "waste_model_efficientnet.keras")
-model = tf.keras.models.load_model(r'C:\Users\prosp\ai-waste-classifier\waste_model_efficientnet.keras')
+model = tf.keras.models.load_model(MODEL_PATH)
 
 # -----------------------------------------------------------
 # CLASS NAMES + ADVICE
