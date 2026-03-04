@@ -83,7 +83,7 @@ class_names = ["biodegradable", "non_recyclable", "recyclable"]
 
 ADVICE = {
     "recyclable": "♻️ This item is recyclable. Rinse if necessary and place it in the recycling bin.",
-    "biodegradable": "🌱 This item is biodegradable. Compost it or dispose of it with organic waste.",
+    "biodegradable": "🌱 This item is biodegradable. Compose it or dispose of it with organic waste.",
     "non_recyclable": "🚯 This item is non-recyclable. Dispose of it properly. Avoid burning or littering."
 }
 
