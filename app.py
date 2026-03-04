@@ -67,7 +67,7 @@ body {
 # TITLE + DESCRIPTION
 # -----------------------------------------------------------
 st.markdown('<div class="main-title">♻️ AI Waste Classifier</div>', unsafe_allow_html=True)
-st.markdown('<p class="desc">Upload an image or take a picture, and the AI will classify it as <b>Recyclable</b>, <b>Biodegradable</b>, or <b>Non-Recyclable</b>.</p>', unsafe_allow_html=True)
+st.markdown('<p class="desc" style="color: white;" >Upload an image or take a picture, and the AI will classify it as <b>Recyclable</b>, <b>Biodegradable</b>, or <b>Non-Recyclable</b>.</p>', unsafe_allow_html=True)
 
 # -----------------------------------------------------------
 # LOAD MODEL
